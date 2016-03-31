@@ -1,0 +1,17 @@
+<h2><%= @flot.nazwa %></h2>
+<h2>Liczba gatunków statków <%= @ships_count %></h2>
+<h2>Liczba statków <%= @ships_ammount %></h2>
+
+<%=render 'ship' %>
+
+
+
+<!-- 
+render na ships
+ -->
+
+
+<%= link_to 'Edit', edit_flot_path%>
+ <%= link_to 'Delete', flot_path(@flot.id),method: :delete%> 
+  <%= link_to 'Back', flots_path %>
+

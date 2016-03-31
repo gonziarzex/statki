@@ -1,0 +1,2 @@
+module FlotsHelper
+end

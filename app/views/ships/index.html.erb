@@ -1,0 +1,8 @@
+<%@ships.each do |ship|%>
+<tr>
+	<td> Gatunek statku <%= ship.gatunek %></td>
+	<p> Liczba statków <%=ship.liczba%></p>
+	
+</tr>
+<%end%>
+<%= link_to "Dodaj gatunek", new_flot_ship_path %>

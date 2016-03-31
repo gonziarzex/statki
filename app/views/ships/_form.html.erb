@@ -1,0 +1,18 @@
+<%=form_for([@flot,@flot.ships.build]) do |f| %> <!-- #stwórz formularz dla zmiennej flot -->
+
+<div class="field">
+<%=f.label :gatunek%><br>
+<%=f.text_field :gatunek %>
+</div>
+
+<div class="field">
+<%=f.label :liczba%><br>
+<%=f.number_field :liczba %>
+</div>
+
+<div class="actions">
+<%= f.submit%> 
+<!-- # przycisk submit któ©y wyśle dane do create -->
+</div>
+
+<%end%>

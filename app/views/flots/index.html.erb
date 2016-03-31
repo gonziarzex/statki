@@ -1,0 +1,10 @@
+<%@flots.each do |flot|%>
+<tr>
+	<td> Nazwa floty <%=link_to flot.nazwa, flot%></td>
+	<p> Liczba gatunków statków <%=flot.ships.count%></p>
+	<p> Dostepność floty <%=flot.dostenosc%></p>
+</tr>
+<%end%>
+<div class="links">
+  <span ><%= link_to "Nowa flota", new_flot_path %></span>  
+</div>
